@@ -48,3 +48,9 @@ if __name__ == "__main__":
     tools_dict = [tool.__dict__ for tool in tools.tools]
     # Print the tools in a readable JSON format
     print(json.dumps(tools_dict, indent=2))
+
+    for tool in tools.tools:
+        print("Tool name:", tool.name)
+        print("Tool description:", tool.description)
+        print("Tool input schema:", tool.inputSchema)
+
